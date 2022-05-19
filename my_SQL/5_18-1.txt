@@ -1,0 +1,21 @@
+user
+	id
+	email		unique
+	password
+	name
+	created_at	now()
+
+memo
+	id
+	user_id		int
+-- 데이터를 저장한걸 불러올수 있어야되니까
+	content		varchar(500)
+	todo_date	timstamp
+	is_completed	boolean
+	created_at 	timestamp
+
+follow
+	id
+	follower_id
+	followee_id
+	created_at

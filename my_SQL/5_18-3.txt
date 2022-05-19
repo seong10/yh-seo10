@@ -1,0 +1,32 @@
+users
+	id	
+	username
+	created_at
+photos
+	id
+	image_url
+	user_id
+	created_at
+follows
+	id
+	follower_id
+	followee_id
+	created_at
+comments
+	id
+	comment_text
+	user_id
+	photo_id
+	created_at
+likes
+	id
+	user_id
+	photo_id
+	created_at
+tags
+	id
+	tag_name
+photo_tags
+	id
+	photo_id
+	tag_id

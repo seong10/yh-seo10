@@ -1,0 +1,27 @@
+user
+	id
+	email		unique
+	password
+	username
+	gender
+	created_at	now()
+movie
+	id
+	title		varchar(100)
+	summary		varchar(500)
+	genre		
+	attendance	int
+	year	년월일timestamp
+review
+	id
+	moive_id		int
+	user_id		int
+	rating		tinyint
+	content		varchar(200)
+	created_at	timestamp
+	updated_at	timestamp
+	       Default( now() on update now() )
+favorite
+	id
+	user_id
+	movie_id

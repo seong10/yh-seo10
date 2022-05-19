@@ -1,0 +1,40 @@
+타입이 많은이유
+저장할때 다르기때문에
+
+기본적으로 많이쓰는 타입
+int 정수
+실수는 double
+
+글자갯수의 한계를 저장하는게 다 다름
+
+vstvhst =>예로 3000글자를 사용하겠다 했는데
+30글자만 썼으면은 빈공간을 지워주는타입
+
+varchar()안에 함수는 글자의 길이
+
+datatype 대소문가 구분못함 int INT 똑같음
+
+SQL = 스트럭쳘 퀄리 렝귀지 
+
+SQL 문법
+끝이 무조건 ; 콜론 으로 끝남
+코드가 순서대로가 아님
+
+people은 중복데이터가 있다
+id컬럼을 만들어야한다
+
+NaN
+Not Null = NN
+
+db는 숫자가 1부터시작 0(x)
+
+AI
+auto increment (자동증가)
+
+UN
+unsigned lnteger = id값은 음수가 나오면 안됨
+
+csv파일로 만드려면 컬럼에 우측마우스
+table data export wizard
+
+primary key

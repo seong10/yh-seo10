@@ -1,0 +1,83 @@
+aws
+
+키페어 파일(ppk)은 없어지면
+다시 로그인 불가능하다
+
+퍼블릭이 누구나 접속할수 있는 주소
+프라이빗은 내부에서 나만 접속할수 있는주소
+
+----
+
+auth = 인증
+
+----
+리눅스 명령어
+ec2-user
+로그인을 이것만 써도 되는이유는 ppk파일을 등록시켜 놨기때문에
+
+pwd = 현재 작업하고있는 경로(폴더)
+pwd : 현재 내가 작업하고 있는 경로알고싶을때
+
+GUI graphical user interface (마우스로 하는 그런것들)
+CLI conmmand line interface
+
+리눅스는 CLI로 작업이되는것
+/ 가 최상위 디렉토리, 윈도우cdc즈에 \C C드라이브와 똑같음
+
+~ : 홈디렉토리
+ec2-user에 접속하면 접속하는 디렉토리가 홈디렉토리
+
+cd : 경로를 이동하고 싶을때 사용하는데,
+cd ~ : 내 아이디인 ec2-user 의 홈 디렉토리로 이동
+cd .. : 하나 윗경로로 이동
+cd . : 점 한개는 현재 디렉토리
+cd /home : 해당 디렉토리로 이동
+ls , ll : list의 약자 지금 경로에 있는 폴더들 다 보여주기
+ls -l : ls를 자세하게 보여달라.
+exit : 종료
+clear : 작업 내역들 청소
+wget : 다운로드
+	* 붙여넣기 는 마우스 오른쪽 클릭
+sh : 실행
+
+vi (파일이름) : 에디터/파일수정
+
+------
+	## 가상환경 만들기
+conda create -n streamlit3.7 python=3.7 numpy scipy matplotlib ipython scikit-learn pandas pillow jupyter seaborn
+	      (가상환경이름) 파이썬 설치하고 넘파이 등등 설치
+python --version : 버전확인
+python
+
+	컨트롤 D 꺼짐
+	컨트롤 C 현재재생꺼짐
+
+pip 해서 다운로드 할수도
+
+conda env list (경로 리스트)
+conda activate streamlit3.7 (해당 가상경로 이동)
+
+conda install joblib
+scikit-learn
+
+----- git 설치
+sudo yum install git
+	yum : 리눅스용 프로그램을 모아둔곳
+	sudo : 슈퍼관리자로서 프로그램을 깔겠다
+
+git clone (git clone http 주소)
+
+## yum 업데이트
+sudo yum update
+sudo yum upgrade
+
+------
+내 컴퓨터에서 
+pkp 파일로 하는게 2t
+리눅스에 접속해서 하는것
+SSG (포트가)22
+
+ip 주소가 안되는 이유 => 방화벽
+
+22, 241만 뚫려있는데
+8501포트가 안뚫려있음

@@ -1,11 +1,11 @@
-## 17 -- 평균값 예측
+## 17 -- 평균값 예측 car purchase
 
 LinearRegression 
 
 RandomForestRegressor
 
-## 18 --
-## 19 --
+## 18 -- spam
+## 19 -- reviews
 메세지 클리닝 해서 나온 글자들을
 벡터라이징해서 숫자로 바꾸고
 

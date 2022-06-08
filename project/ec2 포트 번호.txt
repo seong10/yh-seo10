@@ -1,7 +1,7 @@
-1. review app : 8501 : http://3.39.9.192:8501/
-2. car price app : 8505 : http://3.39.9.192:8505/
-
-3. finedusk app : 8502 : http://3.39.9.192:8502/
+1. finedusk app : 8502 : http://3.39.9.192:8502/
+	http://ec2-3-39-9-192.ap-northeast-2.compute.amazonaws.com:8502/
+2. movie app : 8503 : http://3.39.9.192:8503/
+	http://ec2-3-39-9-192.ap-northeast-2.compute.amazonaws.com:8503/
 
 ======
 6/9까지

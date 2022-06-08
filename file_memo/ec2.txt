@@ -1,0 +1,12 @@
+nohup streamlit run app.py --server.port 8503 &
+
+### amazon linux2 운영체제는?
+	centOS
+
+pip
+sudo yum install tkinter
+
+### 구글번역 api 사용
+pip install googletrans==4.0.0-rc1
+	# 리눅스도 똑같은 pip 명령어
+https://blockdmask.tistory.com/540

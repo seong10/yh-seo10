@@ -37,3 +37,14 @@ streamlit 함수들
 	(텐서플로우의 ImageDataGenerator)
 4. ImageDataGenerator 를 이용해서 데이터 증강 하는 방법
 5. 파일을, training 과 test 디렉토리로 나눠서 저장하는 방법
+
+1. 넘파이 어레이로 되어있는 데이터를 이미지증강 하는 방법
+
+1. Transfer Learning을 하기 위한 코드와 설명
+2. Fine Tuning 을 하기 위한 코드와 설명
+3. 에포크 시마다, 가장 좋은 모델을 저장하는, ModelCheckpoint 사용방법
+4. 에포크 시마다, 기록을 남길 수 있는, CSVLogger 사용 방법
+
+#1. drop 모델링
+# 실습 17
+# 블로그 글들을 보기좋게 분류

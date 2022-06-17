@@ -1,0 +1,8 @@
+1. restful api (URL, Methods, Message)
+2. Python MySQL Connector 를 이용해 insert 하는 방법
+3. Python MySQL Connector 를 이용해 select 하는 방법
+4. Python MySQL Connector 를 이용해 update 하는 방법
+5. Python MySQL Connector 를 이용해 delete 하는 방법
+6. python flask 에서, Resource 클래스를 이용한 API 서버 개발 방법
+	a. app.py 파일과 resource 클래스에 대한 내용
+7. 포스트맨 사용법

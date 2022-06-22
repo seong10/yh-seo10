@@ -1,0 +1,19 @@
+GET /movie?offset:0&limit=25
+로그인 한사람 안한사람 다 사용할수 있게 해야될것같다
+
+GET /movie/321<int:movie
+
+====
+- 특정영화에 달린 rating 리스트를 가져오는 API
+GET /movie/123/rating
+	이게더 좋음
+GET /movie/rating/123(movie_id)
+	movie_id 인데
+	밑에랑 겹침	
+
+-rating 관련
+POST /rating      header:token     body : movie_id, rating
+GET /rating
+	-(아래)내가 작성한 리뷰를 수정
+PUT /rating/123(rating_id)
+DELETE /rating/123(rating_id)

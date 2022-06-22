@@ -1,0 +1,29 @@
+== Table ==
+=user=
+email
+password
+nickname
+
+=memo=
+title
+date
+contents
+
+created_at
+updated_at
+
+
+==API==
+회원가입
+	body = 이메일 비밀번호 닉네임
+POST /users/register
+
+로그인
+	body = 이메일 비밀번호
+로그아웃
+	logout
+
+메모조회
+생성
+삭제
+수정

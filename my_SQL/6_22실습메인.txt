@@ -4,16 +4,23 @@ GET /movie?offset:0&limit=25
 GET /movie/321<int:movie
 
 ====
-- 특정영화에 달린 rating 리스트를 가져오는 API
-GET /movie/123/rating
+-  특정 영화에 대한 리뷰를 가져오는 API
+GET /movie/123/rating?offset=0&limit=25
 	이게더 좋음
+	목록을 가져올때는 페이징처리
 GET /movie/rating/123(movie_id)
 	movie_id 인데
 	밑에랑 겹침	
+- 영화명 검색하는 API
+GET /movie/search?kyword=hello&offset=0&limit=25
 
 -rating 관련
 POST /rating      header:token     body : movie_id, rating
+-- 내가 남긴 모든 리뷰
 GET /rating
 	-(아래)내가 작성한 리뷰를 수정
 PUT /rating/123(rating_id)
 DELETE /rating/123(rating_id)
+
+- 추천 API
+GET /movie/recommend      header : token

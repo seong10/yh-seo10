@@ -1,0 +1,7 @@
+6-24_S3_blog
+
+1. boto3 로 s3 파일 업로드
+2. boto3 로 Rekognition 사용하기
+3. 네이버 파파고 API 사용하는 방법
+	a. requests 라이브러리와 urllib.request 라이브러리 두가지 방법
+4. 네이버 검색 API 사용하는 방법

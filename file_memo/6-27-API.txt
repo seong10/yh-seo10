@@ -1,0 +1,31 @@
+(likes)
+	like 로 하면 겹쳐서 신텍스에러가 날수있기엥
+	s 붙여서 하는게 좋음
+- 좋아요 기능이 됬다고 가정하에
+- 좋아요 생성
+	POST /like/<int:postingId>		header:token
+	POST /like/	body : postingId   header:token
+	## 두가지 경우가 있음
+- 좋아요 삭제
+	DELETE /like/<int:postingId>		header:token
+	삭제는 바디로하면 안되나?
+	DELETE /like/	body : postingId   header:token
+		원칙적으로 delete 메소드는 바디에 넣지 않도록
+		(전세계 표준을 만들때) 바디에 넣지말도록
+		만들었음
+	그래서 생성,삭제를 쌍으로 만드려하니
+	같은 것인 경로로 하는것이 더 효율적일 것이다
+
+- 내가 만든 포스팅 수정
+	PUT /posting/<int:posting_id>
+- 내가 만든 포스팅 삭제
+	DELETE /posting/<int:posting_id>
+- 내가 만든 상세 포스팅만 가져오기
+	GET /posting/<int:posting_id>
+
+- 내가 만든 포스팅들 가져오기
+	GET /posting
+- 친구들의 포스팅 가져오기
+	GET /posting/follow
+	좋아요가 몇개인지도
+	내가 이친구들의 포스팅에 좋아요 했는지 도

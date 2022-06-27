@@ -155,6 +155,6 @@ left join likes l
 on l.postingId = p.id and l.userId = 2
 # 좋아요 갯수확인하기위해서
 left join likes l2
-on l.postingId = p.Id
+on l2.postingId = p.Id
 where f.followerId = 2
 group by p.id;

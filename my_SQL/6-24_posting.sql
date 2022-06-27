@@ -125,3 +125,36 @@ group by p.id;
 
 select *
 from likes;
+
+select * from posting p
+where userId = 2 and p.id = 16;
+
+-- , count(l.userId)
+select *, count(l.userId)
+from follow f
+join posting p
+on p.userId = f.followeeId
+left join likes l
+on l.postingId = p.Id
+where f.followerId = 2
+group by p.id;
+
+select * from likes;
+select * from follow;
+
+-- 내가 좋아요 했는지? 
+select p.*, u.email, u.name,
+	if(l.userId is null, 0, 1) as isLike, count(l2.postingId) as likeCnt
+from follow f
+join posting p
+on p.userId = f.followeeId
+join user u
+on p.userId = u.id
+# 내가 라이크 했는지
+left join likes l
+on l.postingId = p.id and l.userId = 2
+# 좋아요 갯수확인하기위해서
+left join likes l2
+on l.postingId = p.Id
+where f.followerId = 2
+group by p.id;

@@ -1,0 +1,34 @@
+관계형 데이터베이스(RDMBS)  - MySQL, Oracle, DB2, MS-SQL
+확장형 데이터베이스(NoSQL)  - DynamoDB, MongoDB, Casandra(페이스북)
+	샤드 기법으로 확장한다
+
+람다를 이용한
+serverless 구성으로 한다
+
+api 배포 프레임워크 > flask
+aws 배포 프레임워크 > serverless
+
+npm install 로 설치하려면
+> npm 프로그램을 설치해야됨 > nodejs
+
+# \ 줄바꿈하면은 윈도우즈에서 에러가남
+npm i -g serverless && serverless --org=seo10 --app=aws-yh-recipe-server --name=aws-yh-recipe-server --template=aws-python-flask-api
+
+########
+requirements.txt > 서버에 설치할 라이브러리들
+
+######### 명령어
+serverless deploy > 서버에 배포하라는
+
+sls deploy
+
+
+##### 
+1. 만든서버에 배포했으면 그레파지토리에 적용하려는 서버 파일 가져옴
+2. 다시 서버 배포하고 sls deploy
+3. 그 서버에 enpoin(주소)를 포스트맨에 로컬썼던곳에 바꿔서 넣으면 적용
+4. 그 서버를 확인하려면 로그
+ # 4-1 cloudwatch 에 들어가는것도 있고
+ # 4-2 람다에 함수에서 밑에 모니터링에서 로그로 보는것도 있음
+	##서버의 print 값은 다 cloudwatch 의 로그에 찍힌다
+

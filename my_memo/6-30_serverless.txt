@@ -1,0 +1,3 @@
+
+pull request > 팀장님에게 내가 한걸 가져가서 합쳐달라 할때
+	> merge

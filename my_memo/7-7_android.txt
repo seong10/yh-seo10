@@ -1,0 +1,79 @@
+안드로이드 스튜디오 설치
+OEM USB 드라이버 설치 - 실제폰에 실험
+== 블로그
+1. 앱 아이콘 만드는 방법
+2. 앱 이름 바꾸는 방법
+3. 앱의 액션바를 없애는 방법
+4. 안드로이드에서 로그 남기는 방법
+5. 화면의 UI 위젯들을, 액티비티에서 가져다 사용하기 위한 방법
+	a. UI위젯의 ID 값, 액티비티 클래스에서의 findViewByld 함수
+6. 버튼을 클릭하면, 동작하는 코드를 작성하는 방법
+	a. setOnClickListener() 함수와, 이 함수의 파라미터인 View.OnClickListener의 onClick 함수
+
+== tip
+폰 위에 내리는 바 > 액션바
+
+=== 프로젝트 생성
+Packge name > 구글플레이에 올릴때 유니크 해야됨
+Save Location > C:\Users\-\AndroidStudioProjects\MyTestApp
+
+==
+= 구동순서
+manifest 에서 
+	acthion 하고 main 들어있는파일 실행 > mainactivity
+mainactivity 실행함
+
+=res
+layout > 앱 화면
+
+	// 안드로이드는 java + xml 쌍으로 개발하는것이고 눌렀을때
+		// xml > 화면 디자인
+	// 나오게 하는 로직을 개발하는것이고
+
+-- 앱 이미지 아이콘 만들기
+res 폴더에 오른쪽마우스 클릭 > new > image asset 
+- Source Asset 의 path 에서 이미지 선택
+- Scaling 의 Trim > 공백자르기
+
+res - mipmap, drawable 폴더에 이미지가 들어감
+	drawable > 벡터, 즉 이미지 크기
+
+-- 앱 이름 바꾸기
+res > values > strings.xml
+manifests 의 xml 에서 label 이름을 다이렉트로 바꿔도됨
+왜 안하느냐? > 1. 유지보수위해
+	2. 로컬라이징(현지화) 각 언어로 바꿀려할때 (기본적으로 글로벌로 앱을 만드니)
+다이렉트로 바꾸면 프로젝트를 일일이 다만들어야됨
+파일을 여러개 만드는게 더 좋음 > 그래서 string파일에
+
+-- 액션바 없애기
+res > values > themes 경로의 xml 파일에
+style name 의 Theme.MaterialComponents.DayNight.NoActionBar
+의 마지막을 NoActionBar
+
+--- 화면 레이아웃
+-- 이미지 셋팅
+파일을 drawable 에 ctrl + c 
+2. layout 에서 imageView 로 끌어다가 놓고 사용할 이미지 설정
+
+-- 백그라운드 셋팅
+코드로가서 layout 메인부분에
+android:background="@drawable/app_bg"
+		파일 경로 써주기
+
+--버튼셋팅
+코드에서 layout_width 부분에
+wrap_content > 글자 크기에 맞게 전체 크기를 맞추는것
+match_parent > 화면 전체에 크기를 맞추는것
+
+margin > 공백
+backgrountint > 색깔바꾸기
+	# 색깔 인터넷에 rgb color code
+
+--주사위셋팅
+이미지 불러오고 크기 셋팅하고 위치셋팅한후
+> 이름 구별되게 설정 (imgDice1)
+
+-- 사운드 셋팅
+res 의 raw 폴더 만들어 사운드파일넣고
+m

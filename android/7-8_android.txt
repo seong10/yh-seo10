@@ -1,0 +1,83 @@
+= 블로그
+1. 오픈소스 라이브러리를 안드로이드 스튜디오에 적용하는 방법
+	a. build.gradle 의 dependencies 항목
+
+2. TextView / Button 의 속성들
+3. 리니어 레이아웃 2가지 종류와 layout_weight
+4. TextView 의 setText 함수에는 문자열만 넣어준다
+	a. 숫자인 경우는 빈따옴표 처리해주면 쉽게 해결됨.
+
+= github 애니메이션 가져다가 쓰기
+
+gradle > build.gradle > 
+애니메이션의 gradle 에 쓰는 코드 추가하고
+그 코드는 라이브러리므로 상단에 노랑색 연결할꺼라
+창이 나오면 설치하면됨
+
+- 프레임워크 > 앱을 실행했을때 어디에 넣을것이냐
+
+- 앱을 실행했을때, 왼쪽 주사위에 효과를 준다
+
+= layout
+
+== text
+- 글자 배경 색깔 > background
+- 글자 사이즈 > text 검색 > text size
+	# textsize 의 단위는? > sp
+	# 코드에서 작업하는가
+	디자인 뷰에서 작업하는가는 취향 
+- wrap_content > 글자 크기에 맞게 전체 크기를 맞추는것
+match_parent > 화면 전체에 크기를 맞추는것
+	# 픽셀단위가? > 안드로이드에선 dp
+	# 글자사이즈 (sp) 아니면 대부분 dp
+- gravity > center 하면 > 중간에 위치
+- layout_margin > 공백인데 전체적으로 공백을줌
+- padding > 글자안에 공백들
+- visibility > 보이게, 안보이게 > 액션으로 보이게 하는둥 작업가능
+
+- 결론 > xml 에서도 컬러코드들 바꿀수 있지만
+java에서도 바꿀수있음
+
+==EditText
+- android:text 대신 
+android:hint= > 내가적은 글자가 작성시 없어짐
+- inputType > 입력받는 키패드 바꿔줌
+	textPassword > 글자 숨김 처리도 해줌
+
+- 멀티 라인 여러줄 쓰기
+android:inputType="textMultiLine"
+android:maxLines="3"
++ 다른것도 적용하려면?
+| 붙임
+android:inputType="textMultiLine|textPassword"
+
+- 추가로
+android:imeOptions="actionNext"
+다음 것으로 넘어가는 키패드 추가
+
+== 
+- 코딩에 쓰지않는 text 들은
+입력할때 여러개가 나오니 그냥 id를 삭제
+
+== 이미지 파일이름
+- (하이픈) 들어가면 오류남 _(언더스코어) 만 가능
+오류코드도 안알려주고 알수있기 어려움
+- jpg 안쓰고 png씀(안드로이드 개발에서)
+
+== LinearrLayout
+영역을 잡아서 레이아웃
+
+- scaleType
+centercrop - 이미지공백없이 채우기
+
+- layout_height 를 wrap_content 로 해야 영역을 자신의 사진까지
+- android:layout_weight="1" 을 세가지 linear에 하면 1:1:1
+	weight > 비중조절
+	# + height 는 0dp 로
+
+- 중앙으로하려면
+> gravity
+- 위에 띄우려면?
+> margin
+
+>text 지워버림 > 마지막 textAge

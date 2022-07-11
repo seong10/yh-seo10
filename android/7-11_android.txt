@@ -1,0 +1,57 @@
+== 블로그주제
+1. 액티비티 라이프 사이클 주요 4개 함수
+	a. onCreate, onResume, onPause, onDestroy
+2. 프로그레스바 사용법
+3. 안드로이드 네트워크 통신을 위한 Volley 라이브러리
+4. 안드로이드 네트워크 통신을 위한 AndroidManifest.xml 파일 설정법
+
+5. JSON 데이터 파싱하는 방법
+6. 스크롤뷰 사용법
+
+
+== 자동전환 screenOrientation
+manifests > AndroidManifest.xml 에 
+하고자하는(.MainActivity) 에
+android:screenOrientation="portrait"
+	# portrait > 세로모드고정
+	# landscape > 가로모드고정
+	## 설정 안한다면? 폰에 자동전환이 설정되어있는 대로
+
+== 앱을 실행시키면?
+MainActivity 가 실행된다
+그후 연차적으로 onCreate 까지 실행되는것
+
+= onResume()
+실행될때 하는 함수
+
+== activity 의 실행순서 ##( 외워놓기 
+)
+log를 찍어보면 순서가
+onCreate > onStart > onResume ... 으로 실행됨
+
+!! >  중요한것 4개
+!!onCreate
+onStrat > 잘사용안함 
+onStop > 화면이 꺼질때
+!!onResume
+!!onPause > 포그라운드에서 사라질때 즉, 잠시사라질때 화면에서
+!!onDestroy > 앱이 종료될때
+
+== 안드로이드에서 네트워크 통신
+1. Volley
+2. rertrofit2
+
+1. Volley
+- manifest.xml 에서
+    android:targetSandboxVersion="1">
+	// 에뮬레이터에서 네트웤통신 하기위해    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+	// 에뮬레이터에서 네트웤통신 하기위해
+   
+        android:networkSecurityConfig="@xml/network_security_config"
+
+- res에
+network_security_config.xml 파일 만듬

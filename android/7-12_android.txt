@@ -1,0 +1,47 @@
+=블로그
+1. 앱의 칼라 바꾸기
+2. CountDownTimer 사용법
+3. AlertDialog 사용법
+=================================
+json 으로 가져와 화면에 출력
+
+- Routes
+GET	/posts/1
+
+Parsing - 데이터를 끄집어낸다
+=================================
+= Volly 로 네트워크 연결
+
+1. gradle 에서 라이브러리 연결
+- 홈페이지 참고
+
+2. Manifest.xml 작업
+<uses-permission android:name="android.permission.INTERNET"/>
+- GPS 할수도있고 INTERNET > 인터넷에 연결
+나머지 3가지
+
+android:networkSecurityConfig="@xml/network_security_config"
+	// network 파일 복사 한후에 경로설정
+
+3. network 파일 복사
+- 경로 수정
+	// 안전한 경로니 처리해줘
+	// *.com 으로 하면 .com으로 된 주소 전부다 하는것이고
+
+=MainActivity
+	// 아래 코드가 실제로, 네트워크로 호출하라는 코드!
+        // 이 코드가 없으면, 네트워크 호출 안합니다.!!
+requestQueue.add(jsonObjectRequest); 
+
+=================================
+themes.xml 에서
+상태바, 액션바 색깔 설정가능
+================================
+=Timer
+-hard coding > 코드안에다가 직접 텍스트를 넣으면
+레이아웃 코드에서 왼쪽 노란전구 했을때 extract하면
+string.xml에 추가됨 > 따로 빼내주기
+	// 왜하냐? 나중에 string 파일만 가지고 영어버전 으로 만들기가능
+
+================================
+= 알러트 다이얼로그

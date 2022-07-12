@@ -31,6 +31,9 @@ onCreate > onStart > onResume ... 으로 실행됨
 
 !! >  중요한것 4개
 !!onCreate
+	화면 연결하고
+	처음 실행될때
+	초기화 관련된걸 쭉하고 다음 on ...
 onStrat > 잘사용안함 
 onStop > 화면이 꺼질때
 !!onResume
@@ -39,7 +42,7 @@ onStop > 화면이 꺼질때
 
 == 안드로이드에서 네트워크 통신
 1. Volley
-2. rertrofit2
+2. restrofit2
 
 1. Volley
 - manifest.xml 에서

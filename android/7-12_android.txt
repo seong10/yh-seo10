@@ -2,6 +2,8 @@
 1. 앱의 칼라 바꾸기
 2. CountDownTimer 사용법
 3. AlertDialog 사용법
+
+# 4. inNumeric 라이브러리 (받은 text가 문자열인지 검열) 
 =================================
 json 으로 가져와 화면에 출력
 
@@ -17,7 +19,7 @@ Parsing - 데이터를 끄집어낸다
 
 2. Manifest.xml 작업
 <uses-permission android:name="android.permission.INTERNET"/>
-- GPS 할수도있고 INTERNET > 인터넷에 연결
+- GPS 할수도있고,  INTERNET 은 > 인터넷에 연결한다는것
 나머지 3가지
 
 android:networkSecurityConfig="@xml/network_security_config"

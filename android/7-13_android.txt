@@ -1,0 +1,32 @@
+= 블로그
+1. 액티비티간의 화면 전환 방법
+	a. Intent 와 startActivity 함수
+	b. 액티비티의 라이프 사이클 함수들이 실행되는 순서
+2. 이메일 형식 체크하는 코드
+3. 액티비티 간의 단방향 데이터 전달방법
+4. 액티비티 간의 양방향 데이터 전달방법
+5. SharedPreferences 를 이용한, 데이터 저장과 불러오기
+
+===============================
+= multiActivity
+- 클래스생성
+	new의 activity
+
+- 쌓여있는 구조로 되어있다 > step?
+
+- Manifest에서
+activity의 메인이 들어있는 activity를 바꾸면
+첫화면 순서를 바꿀수 있음
+
+= todo
+todo 로그창에서 해당 todo를 넣은곳으로 바로 이동됨
+
+= 이메일 형식 체크 라이브러리
+Patterns.EMAIL_ADDRESS
+	patterns 의 라이브러리
+
+= 다른 액티비티에 데이터 전달
+
+===============================
+= 저장
+S P > SharedPreferences

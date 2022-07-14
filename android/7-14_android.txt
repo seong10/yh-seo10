@@ -1,0 +1,41 @@
+=블로그
+1. SQLite3 데이터베이스 활용하는 방법
+	a. SQLiteOpenHelper 클래스를 상속받아 처리하는 방법
+2. ArrayList 등에 저장된 데이터를 가져와서 처리하는데 효율적인 for( : ) 문법
+2-1. onResume에 Log를 적으면 저장한후 Log가 나옴
+3. RecyclerView 와 Adapter 를 이용하여 리스트를 화면에 표시하는 방법
+================================
+DB
+Table : Contact
+- id
+- name
+- phone
+
+메모리
+	변수 id, name, phone
+class Contact
+- id
+- name
+- phone
+함수들
+	# 객체지향 = 클래스
+	# 메모리에 올릴 데이터가 테이블뿐만아닌
+	# 클래스에 있어야지
+---------------------------------------------
+
+
+SQLiteOpenHelper
+
+===============================
+- onResume
+에 log를 적을시 사이클상
+저장하고서 이후에 찍힘
+
+-여러개행
+> 레이아웃main에서 리사이클뷰
+- RecyclerView
+따로 화면을 설계 >
+layout > xml파일 (LinearLayout 으로)
+
+> new vector 어셋 에서 이미지만듬
+drawable에

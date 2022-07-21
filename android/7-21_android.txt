@@ -1,0 +1,38 @@
+=블로그
+1. 카메라 / 앨범처리
+	a. 메니페스트파일, xml 파일, 라이브러리 설정 등
+2. 네트워크 연결 라이브러리인 retrofit 의 구조
+2. Retrofit2 라이브러리 사용을 위한 설정 방법
+3. Retrofit2 라이브러리를 이용한 POST 로 API 호출하여 처리하는 방법
+=========================================
+-camera manifest
+
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+		// 3개 카메라권한 설정
+
+    <application
+        android:requestLegacyExternalStorage="true"
+		// 예전폰에 호환되게
+
+<provider
+            android:authorities="com.seo10.camera.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+		// 외부로 노출할꺼냐
+	android:grantUriPermissions="true">
+            <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+	android:resource="@xml/fileprovider"/>
+		// 파일프로바이더 가져온 파일
+</provider>
+
+-fileprovider.xml
+	카메라 저장하는 파일
+
+- 스트링을 배열로도 만들수 있음
+    <string-array name="alert_photo">
+        <item>카메라로 사진 찍기</item>
+        <item>앨범에서 가져오기</item>
+    </string-array>
